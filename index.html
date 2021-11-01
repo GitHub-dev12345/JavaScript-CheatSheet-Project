@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript CheatSheet by Dev Rathore</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="Logo/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Logo/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Logo/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="Logo/favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <script src="   prism.js"></script>
+    <link rel="stylesheet" href="prism.css">
+</head>
+<body>
+    <nav class="navbar">
+        <span class="logo"><img src="Logo/copy.png" alt=""></span>
+        <span class="nav content">JavaScript CheatSheet</span>
+    </nav>
+
+    <div class="container">
+        <ol>
+            <li>JavaScript Basics <br><br>
+                Set of JavaScript basic syntax to add, execute and write basic programming paradigms in JavaScript. <br><br>
+
+                On Page Script <br><br>
+                Adding internal JavaScript to HTML
+                <pre class="language-html"><code>
+&lt;script type="text/javascript"&gt; //JS code goes here &lt;/script&gt;
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>External JS File <br><br>
+                Adding External JavaScript to HTML
+                <pre class="language-html"><code>
+&lt;script src="filename.js"&gt;&lt;/script&gt;
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>Functions <br><br>
+                JavaScript Function syntax
+                <pre class="language-js"><code>
+function nameOfFunction () {
+// function body
+}
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>DOM Element <br><br>
+                Changing content of a DOM Element
+                <pre class="language-js"><code>
+document.getElementById("elementID").innerHTML = "Hello World!";
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>Output <br><br>
+                This will print value of a in JavaScript console
+                <pre class="language-js"><code>
+console.log(a);
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>Conditionals Statements <br><br>
+                Conditionals statements are used to perform operations based on some conditions. <br><br>
+
+                If Statement <br><br>
+                The block of code to be executed, when the condition specified is true.
+                <pre class="language-js"><code>
+if (condition) {
+// block of code to be executed if the condition is true
+}
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>If-else Statement <br><br>
+                If the condition for the if block is false, then else block will be executed.
+                <pre class="language-js"><code>
+if (condition) {
+// block of code to be if the condition is true
+} else {
+// block of code to be executed if the condition is false
+}
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>Else-if Statement <br><br>
+                A Basic if-else ladder
+                <pre class="language-js"><code>
+if (condition) {
+// block of code to be executed if condition1 is true
+} else if (condition2) {
+// block of code to be executed if the condition1 is false and condition2 is 
+} else {
+// block of code to be executed if the condition1 is false and condition2 is
+}
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>Switch Statement <br><br>
+                Switch case statement in JavaScript
+                <pre class="language-js"><code>
+switch(expression) {
+case x:
+// code block 
+break;
+case y:
+// code block 
+break;
+default:
+// code block
+}
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>Iterative Statements (Loops) <br><br>
+                Iterative statement facilitates programmer to execute any block of code lines repeatedly and can be controlled as per conditions added by the programmer. <br><br>
+
+                For Loop <br><br>
+                For loop syntax in javascript
+                <pre class="language-js"><code>
+for (statement 1; statement 2; statement 3) {
+// code block to be executed
+}
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>While Loop <br><br>
+                Runs the code till the specified condition is true
+                <pre class="language-js"><code>
+while (condition) {
+// code block to be executed
+}
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>Do While Loop <br><br>
+                A do while loop is executed at least once despite the condition being true or false 
+                <pre class="language-js"><code>
+do {
+// run this code in block
+i++;
+} while (condition);
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>Strings <br><br>
+                The string is a sequence of characters that is used for storing and managing text data. <br><br>
+
+                charAt method <br><br>
+                Returns the character from the specified index.
+                <pre class="language-js"><code>
+str.charAt(3)
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>concat method <br><br>
+                Joins two or more strings together.
+                <pre class="language-js"><code>
+str1.concat(str2)
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>index of method <br><br>
+                Returns the index of the first occurrence of the specified character from the string else -1 if not found
+                <pre class="language-js"><code>
+str.indexOf('substr')
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>match method <br><br>
+                Searchers a string for a match against a regular expression.
+                <pre class="language-js"><code>
+str.match(/(chapter \d+(\. \d)*)/i;)
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>replace method <br><br>
+                Searchers a string for a match against a specified string or char and returns a new string by replacing the specified values.
+                <pre class="language-js"><code>
+str1.replace(str2)
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>search method <br><br>
+                Searchers a string against a specified value.
+                <pre class="language-js"><code>
+str.search('term')
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>split method <br><br>
+                Splits a string into an array consisting of substrings.
+                <pre class="language-js"><code>
+str.split('\n')
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>substring method <br><br>
+                Returns a substring of a string containing characters from specified indices.
+                <pre class="language-js"><code>
+str.substring(0,5)
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>Arrays <br><br>
+                The array is a collection of data items of the same type. In simple terms, it is a variable that contains multiple values. <br><br>
+
+                variable <br><br>
+                Containers for storing data.
+                <pre class="language-js"><code>
+var fruit = ["element1", "element2", "element3"];
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>concat method <br><br>
+                Joins two or more arrays together.
+                <pre class="language-js"><code>
+concat()
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>indexOf method <br><br>
+                Returns the index of the specified item from the array.
+                <pre class="language-js"><code>
+indexOf()
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>join method <br><br>
+                Converts the array elements to a string.
+                <pre class="language-js"><code>
+join()
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>pop method <br><br>
+                Delete the last element of the array.
+                <pre class="language-js"><code>
+pop()
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>reverse method <br><br>
+                This method reverses the order of the array elements.
+                <pre class="language-js"><code>
+reverse()
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>sort method <br><br>
+                Sorts the array elements in a specified manner.
+                <pre class="language-js"><code>
+sort()
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>toString method <br><br>
+                Converts the array elements to a string.
+                <pre class="language-js"><code>
+toString()
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>valueOf method <br><br>
+                returns the relevant Number Object holding the value of the argument passed
+                <pre class="language-js"><code>
+valuOf()
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>Number Methods <br><br>
+                JS math and number objects provide several constant and methods to perform mathematical operations. <br><br>
+
+                toExponential method <br><br>
+                Converts a number to its exponential form.
+                <pre class="language-js"><code>
+toExponential()
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>toPrecision method <br><br>
+                Formats a number into a specified length 
+                <pre class="language-js"><code>
+toPrecision()
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>toString method <br><br>
+                Converts an object to a string
+                <pre class="language-js"><code>
+toString()
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>valueOf method <br><br>
+                Returns the primitive value of a number
+                <pre class="language-js"><code>
+valueOf()
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>Maths Methods <br><br>
+                ceil method <br><br>
+                Rounds a number upwards to the nearest integer, and returns the result
+                <pre class="language-js"><code>
+ceil(x)
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>exp method <br><br>
+                Returns the value of E^x.
+                <pre class="language-js"><code>
+exp(x)
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>log method <br><br>
+                Returns the logarithmic value of x.
+                <pre class="language-js"><code>
+log(x)
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>pow method <br><br>
+                Returns the value of x to the power y.
+                <pre class="language-js"><code>
+pow(x,y)
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>random method <br><br>
+                Returns a random number between 0 and 1.
+                <pre class="language-js"><code>
+random()
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>sqrt method <br><br>
+                Returns the square root of a number x
+                <pre class="language-js"><code>
+sqrt(x)
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>Dates <br><br>
+                Date object is used to get the year, month and day. It has methods to get and set day, month, year, hour, minute, and seconds. <br><br>
+
+                Pulling Date from the Date object <br><br>
+                Returns the date from the date object
+                <pre class="language-js"><code>
+getdate()
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>Pulling Day from the Date oject <br><br>
+                Returns the hours from the date object
+                <pre class="language-js"><code>
+getDay()
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>Pulling Hours from the Date object <br><br>
+                Returns the hours from the date object
+                <pre class="language-js"><code>
+getHours()
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>Pulling Minutes from the Date object <br><br>
+                Returns the minute from the date oject
+                <pre class="language-js"><code>
+getMinutes()
+                </code></pre>
+            </li>
+
+            <br>
+            <li>Pulling Seconds from the Date object <br><br>
+                Returns the seconds from the date object
+                <pre class="language-js"><code>
+getSeconds()
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>Pulling Time from the Date object <br> <br>
+                Returns the time from the date object
+                <pre class="language-js"><code>
+getTime()
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>Mouse Events <br><br>
+                Any change in the state of an object is referred to as an Event. With the help of JS, you can handle events, i.e., how any specific HTML tag will work when the user does something. <br><br>
+
+                click <br><br>
+                Fired when an element is clicked 
+                <pre class="language-js"><code>
+element.addEventListener('click', ()=>{
+// Code to be executed when the event is fired
+});
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>oncontextmenu <br><br>
+                Fired when an element is right-clicked
+                <pre class="language-js"><code>
+element.addEventListener('contextmenu', ()=>{
+// Code to be executed when the event is fired
+});
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>dblclick <br><br>
+                Fired when an element is double-clicked
+                <pre class="language-js"><code>
+element.addEventListener('dblclick', ()=>{
+// Code to be executed when the event is fired
+});
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>mouseenter <br><br>
+                Fired when an element is entered by the mouse arrow
+
+                <pre class="language-js"><code>
+element.addEventListener('mouseenter', ()=>{
+// Code to be executed when the event is fired
+});
+                </code></pre>
+            </li>
+            
+            <br>
+            
+            <li>mouseleave <br><br>
+                Fired when an element is exited by the mouse arrow
+                <pre class="language-js"><code>
+element.addEventListener('mouseleave', ()=>{
+// Code to be executed when the event is fired 
+});
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>mousemove <br><br>
+                Fired when the mouse is moved inside the element
+                <pre class="language-js"><code>
+element.addEventListener('mousemove', ()=>{
+// Code to be executed when the event is fired 
+});
+                </code></pre>
+            </li>
+            
+            <br>
+
+            <li>Keyboard Events <br><br>
+                Keydown <br><br>
+                Fired when the user is pressing a key on the Keyboard
+                <pre class="language-js"><code>
+element.addEventListener('Keydown', ()=>{
+// Code to be executed when the event is fired
+});
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>keypress <br><br>
+                Fired when the user presses the key om the Keyboard
+
+                <pre class="language-js"><code>
+element.addEventListener('Keypress', ()=>{
+// Code to be executed when the event is fired
+});
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>keyup <br><br>
+                Fired when the user releases a key on the keyboard
+
+                <pre class="language-js"><code>
+element.addEventListener('keyup', ()=>{
+// Code to be executed when the event is fired
+});
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>Errors <br><br>
+                Errors are thrown by the compiler or interpreter whenever they find any fault in the code, and it can be of any type like syntax error, run-time error, logical error, etc. JS provides some functions to handle the errors. <br><br>
+
+                try and catch <br><br>
+                Try the code block and execute catch when err is thrown
+
+                <pre class="language-js"><code>
+try {
+Block of code to try
+}
+catch(err) {
+Block of code to handle errors
+}
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>Window Methods <br><br>
+                Methods that are available from the window object <br><br>
+
+                alert method <br><br>
+                Used to alert something on the screen
+
+                <pre class="language-js"><code>
+alert()
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>blur method <br><br>
+                The blur() method removes focus from the current window.
+                <pre class="language-js"><code>
+blur()
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>setInterval <br><br>
+                Keeps executing code at a certain setInterval
+
+                <pre class="language-js"><code>
+setInterval(() =>{
+// Code to be executed
+}, 1000);
+                </code></pre>
+            </li>
+
+            <br>
+            
+            <li>setTimeout <br><br>
+                Executes the code after a certain interval of Time
+
+                <pre class="language-js"><code>
+setTimeout(() =>{
+// code to be executed
+}, 1000);
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>close <br><br>
+                The Window.close() method closes the current window
+
+                <pre class="language-js"><code>
+window.close()
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>confirm <br><br>
+                The window.confirm() instructs the browser to display a dialog with an optional message, and to wait until the user either confirms or cancels
+
+                <pre class="language-js"><code>
+window.confirm('Are you sure?')
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>open <br><br>
+                Open a new window
+
+                <pre class="language-js"><code>
+window.open("https: //www.futuristicvision.com");
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>prompt <br><br>
+                Prompts the user with a text and takes a value. Second parameter is the default value.
+
+                <pre class="language-js"><code>
+var name = prompt("what is your name?", "Dev");
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>scrollBy
+                <pre class="language-js"><code>
+window.scrollBy(100, 0); // Scroll 100px to the right
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>scrollTo <br><br>
+                Scrolls the document to the specified coordinates.
+
+                <pre class="language-js"><code>
+window.scrollTo(500, 0); // Scroll to horizantal position 500
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>clearInterval <br><br>
+                Clears the setInterval. var is the value returned by setInterval call
+
+                <pre class="languagejs"><code>
+clearInterval(var)
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>clearTimeout <br><br>
+                Clears the setTimeout. var is the value returned by setTimeout call 
+
+                <pre class="language-js"><code>
+clearTimeout(var)
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>stop <br><br>
+                Stops the further resource loading
+
+                <pre class="language-js"><code>
+stop()
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>Query/Get Elements <br><br>\
+                The browser creates a DOM (Document Object Model) whenever a web page is loaded, and with the help of HTML DOM, one can access and modify all the elements of the HTML document. <br><br>
+
+                querySelector <br><br>
+                Selector to slect first matching element
+
+                <pre class="language-js"><code>
+document.querySelector('css-sslectors')
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>querySelectorAll <br><br>
+                A selector to select all matching elements
+
+                <pre class="language-js"><code>
+document.querySelectorAll('css-sslectors', ...)
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>getElementByTagName <br><br>
+                Select elements by tag name?
+
+                <pre class="language-js"><code>
+document.getElementByTagName('element-name')
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>getElementByClassName <br><br>
+                Select element by class name?
+
+                <pre class="language-js"><code>
+document.getElementByClassName('class-name')
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>Get Element by Id <br><br>
+                Select an element by its id
+
+                <pre class="language-js"><code>
+document.getElementById('id')
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>Creating Elements <br><br>
+                create new elements in the DOM <br><br>
+
+                createElement <br><br>
+                Create a new element
+
+                <pre class="language-js"><code>
+document.createElement('div')
+                </code></pre>
+            </li>
+
+            <br>
+
+            <li>createTextNode <br><br>
+                Create a new text node
+
+                <pre class="language-js"><code>
+document.createTextNode('some text here')
+                </code></pre>
+            </li>
+        </ol>
+    </div>
+
+    <footer>
+        <span>Copyright &copy; 2021-2022 futuristicvision.com</span>
+    </footer>
+</body>
+</html>
